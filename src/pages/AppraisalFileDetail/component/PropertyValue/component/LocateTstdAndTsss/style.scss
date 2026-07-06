@@ -1,0 +1,21 @@
+.locate-wrapper{
+    .ant-space-item{
+        border-radius: 4px;
+    }
+    .places-container-tstd {
+        z-index: 1000;
+        margin-top: 30px;
+        div {
+            z-index: 1000;
+        }
+    }
+    .locate-image{
+        width: 100%;
+        height: 500px;
+        border-radius: 4px;
+        background-size: contain;
+    }
+}
+.label-marker-custom {
+    transform: translateY(-30px);
+}

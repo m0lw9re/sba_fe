@@ -1,0 +1,89 @@
+.image-container {
+  height: 100%;
+  // max-height: 314px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+
+  &.error {
+    border: 2px solid red;
+    .ant-image-img {
+      opacity: 0.7;
+      filter: grayscale(75%);
+    }
+    .error-icon {
+      position: absolute;
+      top: 50%;
+      left: 47%;
+      transform: translate(-47%, -47%);
+      z-index: 999;
+    }
+  }
+
+  &.error-src {
+    border: 2px solid rgb(47, 107, 179);
+    .ant-image-img {
+      opacity: 0.7;
+      filter: grayscale(75%);
+    }
+    .error-icon {
+      position: absolute;
+      top: 50%;
+      left: 47%;
+      transform: translate(-47%, -47%);
+      z-index: 999;
+    }
+  }
+
+  .image-contain-upload {
+    display: block;
+    border-radius: 4px;
+    height: 100%;
+  }
+
+  .modal-confirm-action {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all ease-in-out 0.6s;
+    animation: showFillControl 0.3s forwards;
+
+    .action-control {
+      background-color: black;
+      display: flex;
+      padding: 4px 12px;
+      margin-bottom: 6px;
+      border-radius: 8px;
+      gap: 12px;
+      .buton-action-image {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        line-height: 36px;
+      }
+    }
+  }
+
+  .hide-fill-control {
+    display: none;
+  }
+}
+
+@keyframes showFillControl {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,182 @@
+import {
+  AssetImages,
+  AssetOwners,
+  LegalInformation,
+  RiskDetail,
+} from "./assetCommon.type";
+
+export type AssetAppartmentType = {
+  assetId: string | null;
+  assetCode: string | null;
+  appraisalPurposeId: number | null;
+  landPlotNumber: string | null;
+  mapSheetNumber: string | null;
+  realAddressDetail: string | null;
+  realAddressStreet: string | null;
+  realAddressWard: string | null;
+  realAddressDistrict: string | null;
+  realAddressProvince: string | null;
+  legalAddressDetail: string | null;
+  legalAddressStreet: string | null;
+  legalAddressWard: string | null;
+  legalAddressDistrict: string | null;
+  legalAddressProvince: string | null;
+  positionDescribe: string | null;
+  socialInfra: number | null;
+  techInfra: number | null;
+  mainRoad: string | null;
+  contiguousRoad: string | null;
+  distanceToMainRoad: number | null;
+  contiguousRoadWidth: number | null;
+  apartmentTypeId: number | null;
+  landArea: number | null;
+  floors: number | null;
+  basements: number | null;
+  yearsOfComplete: number | null;
+  equipmentId: number | null;
+  apartmentForm: string | null;
+  ownerTypeId: number | null;
+  legalApartmentNumber: number | null;
+  legalFloorNo: number | null;
+  legalFloorArea: number | null;
+  legalStructure: string | null;
+  legalFacades: number | null;
+  legalMainBalconyDirectionId: number | null;
+  legalExtendArea: number | null;
+  realApartmentNumber: number | null;
+  realFloorNo: number | null;
+  realFloorArea: number | null;
+  realStructure: string | null;
+  realFacades: number | null;
+  realMainBalconyDirectionId: number | null;
+  realExtendArea: number | null;
+  furnitures: string | null;
+  currentUseSituationId: number | null;
+  realUsingPurposeTypeId: number | null;
+  usingPurposeTypeId: number | null;
+  usingOriginTypeId: number | null;
+  usingPeriodId: number | null;
+  businessAdvantage: number | null;
+  liquidity: number | null;
+  isDispute: number | null;
+  disputeInformation: string | null;
+  isPlanned: number | null;
+  planningInformation: string | null;
+  note: string | null;
+  appraisalDate: string | null;
+  expiredDate: string | null;
+  positioningImage: string | null;
+  unitPrice: number | null;
+  totalPrice: number | null;
+  whoCreate: string | null;
+  dateCreate: string | null;
+  isFinish: boolean;
+  dateModify: string | null;
+  assetImages: AssetImages[];
+  assetOwners: AssetOwners[];
+  legalInformations: LegalInformation[];
+  riskDetailDtos: RiskDetail[];
+};
+
+export type AssetAppartmentDataBasicType = {
+  assetId?: string | null;
+  assetCode?: string | null;
+  appraisalPurposeId?: number | null;
+  landPlotNumber?: string | null;
+  mapSheetNumber?: string | null;
+  realAddressDetail?: string | null;
+  realAddressStreet?: string | null;
+  realAddressWard?: string | null;
+  realAddressDistrict?: string | null;
+  realAddressProvince?: string | null;
+  legalAddressDetail?: string | null;
+  legalAddressStreet?: string | null;
+  legalAddressWard?: string | null;
+  legalAddressDistrict?: string | null;
+  legalAddressProvince?: string | null;
+  positionDescribe?: string | null;
+  socialInfra?: number | null;
+  techInfra?: number | null;
+  mainRoad?: string | null;
+  contiguousRoad?: string | null;
+  distanceToMainRoad?: number | null;
+  contiguousRoadWidth?: number | null;
+  apartmentTypeId?: number | null;
+  landArea?: number | null;
+  floors?: number | null;
+  basements?: number | null;
+  yearsOfComplete?: number | null;
+  equipmentId?: number | null;
+  apartmentForm?: string | null;
+  ownerTypeId?: number | null;
+  legalApartmentNumber?: number | null;
+  legalFloorNo?: number | null;
+  legalFloorArea?: number | null;
+  legalStructure?: string | null;
+  legalFacades?: number | null;
+  legalMainBalconyDirectionId?: number | null;
+  legalExtendArea?: number | null;
+  realApartmentNumber?: number | null;
+  realFloorNo?: number | null;
+  realFloorArea?: number | null;
+  realStructure?: string | null;
+  realFacades?: number | null;
+  realMainBalconyDirectionId?: number | null;
+  realExtendArea?: number | null;
+  furnitures?: string | null;
+  currentUseSituationId?: number | null;
+  realUsingPurposeTypeId?: number | null;
+  usingPurposeTypeId?: number | null;
+  usingOriginTypeId?: number | null;
+  usingPeriodId?: number | null;
+  businessAdvantage?: number | null;
+  liquidity?: number | null;
+  isDispute?: number | null;
+  disputeInformation?: string | null;
+  isPlanned?: number | null;
+  planningInformation?: string | null;
+  note?: string | null;
+  appraisalDate?: string | null;
+  expiredDate?: string | null;
+  positioningImage?: string | null;
+  unitPrice?: number | null;
+  totalPrice?: number | null;
+  whoCreate?: string | null;
+  dateCreate?: string | null;
+  isFinish?: boolean;
+  dateModify?: string | null;
+  assetImages?: AssetImages[];
+  assetOwners?: AssetOwners[];
+  legalInformations?: LegalInformation[];
+  riskDetailDtos?: RiskDetail[];
+};
+
+export type GetAssetAppartmentInfoParamType = {
+  assetId: string;
+};
+
+export type AppartSpecification = {
+    legalApartmentNumber: number | null;
+    realApartmentNumber: number | null;
+    legalFloorNo: number | null;
+    realFloorNo: number | null;
+    legalFloorArea: number | null;
+    realFloorArea: number | null;
+    legalStructure: string | null;
+    realStructure: string | null;
+    legalFacades: number | null;
+    realFacades: number | null;
+    legalMainBalconyDirectionId: number | null;
+    realMainBalconyDirectionId: number | null;
+    realExtendArea: number | null;
+    legalExtendArea: number | null;
+}
+
+export type AppartSpecificationFastExpType = {
+  legalApartmentNumber: number | null;
+  legalFloorNo: number | null;
+  legalFloorArea: number | null;
+  legalStructure: string | null;
+  legalFacades: number | null;
+  legalMainBalconyDirectionId: number | null;
+}

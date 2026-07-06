@@ -1,0 +1,51 @@
+// .pdf-form-upload {
+//   display: flex;
+//   justify-content: center;
+//   align-items: start;
+//   column-gap: 24px;
+//   .ant-upload-drag {
+//     flex-grow: 1;
+//   }
+//   .ant-upload-list {
+//     display: flex;
+//     flex-direction: column;
+//     max-width: 50%;
+//     flex-wrap: wrap;
+//     .ant-upload-list-item-container {
+//       width: 100% !important;
+//       height: unset !important;
+//       max-width: 100%;
+//       padding-bottom: 8px;
+//       .ant-upload-list-item-name {
+//         font-size: 16px;
+//       }
+//       .ant-upload-icon,
+//       .ant-upload-list-item-actions {
+//         font-size: 16px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//       }
+//     }
+//     .ant-upload {
+//       width: unset !important;
+//       height: unset !important;
+//     }
+//   }
+// }
+
+// .pdf-form-upload {
+//   .ant-upload-list {
+//     .ant-upload-list-item-container {
+//       .ant-upload-icon {
+//         display: none;
+//       }
+//       .ant-upload-list-item-name{
+//         padding: 0;
+//       }
+//     }
+//     .ant-upload-list-item-progress{
+//       padding-inline-start: 0!important;
+//     }
+//   }
+// }

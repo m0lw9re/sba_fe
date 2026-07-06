@@ -1,0 +1,35 @@
+.assets-code-tab-custom {
+  > .ant-tabs-nav {
+    margin-bottom: 8px;
+    &::before {
+      content: none;
+    }
+    .ant-tabs-nav-wrap {
+      .ant-tabs-nav-list {
+        .ant-tabs-ink-bar {
+          background-color: #2862af;
+        }
+        .ant-tabs-tab {
+          padding-top: 8px;
+          padding-bottom: 8px;
+          .ant-tabs-tab-btn {
+            opacity: 0.6;
+          }
+          &:hover {
+            color: #2862af;
+            .ant-tabs-tab-btn {
+              opacity: 1;
+              color: #2862af;
+            }
+          }
+        }
+        .ant-tabs-tab-active {
+          .ant-tabs-tab-btn {
+            opacity: 1;
+            color: #2862af;
+          }
+        }
+      }
+    }
+  }
+}

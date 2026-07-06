@@ -1,0 +1,35 @@
+.tab-appraisal-wrapper {
+    .form-item-custom-container {
+        width: calc(100% - 24px);
+        margin: 0;
+        align-items: center;
+
+        .form-input-custom {
+            width: calc(100% + 24px);
+        }
+
+        .ant-form-item-no-colon {
+            span {
+                color: #919191;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .form-item-custom-container {
+            width: calc(100%);
+            margin: 0;
+            align-items: center;
+
+            .form-input-custom {
+                width: calc(100%);
+            }
+
+            .ant-form-item-no-colon {
+                span {
+                    color: #919191;
+                }
+            }
+        }
+    }
+}

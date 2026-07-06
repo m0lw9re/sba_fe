@@ -1,0 +1,107 @@
+import {TYPE_FIELD} from "constant/enums";
+import {InputFiledParams} from "constants/types/Form_Field_type";
+const {INPUT, SELECT, INPUT_NUMBER} = TYPE_FIELD;
+const css = {xs: 24, sm: 24, md: 24, lg: 12, xl: 12};
+const wrapperCol = {xs: 10, md: 10, lg: 10, xl: 14};
+const labelCol = {xs: 14, md: 14, lg: 14, xl: 10};
+const fields: InputFiledParams[] = [
+  {
+    key: 1,
+    label: "Tên khách hàng",
+    name: "customerName",
+    type: INPUT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  {
+    key: 2,
+    label: "CCCD/CC/HC/CMTQĐ/MST/ĐKKD",
+    name: "customerIdentity",
+    type: INPUT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  {
+    key: 3,
+    label: "Số thửa",
+    name: "landPlotNumber",
+    type: INPUT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  {
+    key: 4,
+    label: "Số tờ bản đồ",
+    name: "mapSheetNumber",
+    type: INPUT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  {
+    key: 5,
+    label: "Tỉnh/Thành phố",
+    name: "addressProvince",
+    type: SELECT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+    expand: true,
+  },
+
+  {
+    key: 6,
+    label: "Quận/Huyện/TP/Thị xã",
+    name: "addressDistrict",
+    type: SELECT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+    expand: true,
+  },
+  {
+    key: 7,
+    label: "Xã/Phường/Thị trấn",
+    name: "addressWard",
+    type: SELECT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+    expand: true,
+  },
+  {
+    key: 8,
+    label: "Diện tích khuôn viên",
+    name: "areaWidth",
+    type: INPUT_NUMBER,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+    expand: true,
+  },
+  {
+    key: 9,
+    label: "Mục đích sử dụng đất",
+    name: "usingPurposeId",
+    type: SELECT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+    expand: true,
+  },
+  {
+    key: 10,
+    label: "Giá trị tài sản",
+    name: "totalValue",
+    type: INPUT_NUMBER,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+    expand: true,
+    currencable: true,
+  },
+];
+export {fields};

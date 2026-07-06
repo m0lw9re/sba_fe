@@ -1,0 +1,26 @@
+.common-infor-div-container {
+    .info-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+
+        .info-item {
+            display: flex;
+            flex: 1;
+            border-left: 1px solid rgba($color: #000000, $alpha: 0.05);
+            padding-left: 8px;
+
+            .ant-typography {
+                min-width: 120px !important;
+            }
+        }
+    }
+
+    .infor-item-container {
+        border-left: 1px solid rgba($color: #000000, $alpha: 0.05);
+        padding-left: 8px;
+        .ant-select{
+            width: 100% !important;
+        }
+    }
+}

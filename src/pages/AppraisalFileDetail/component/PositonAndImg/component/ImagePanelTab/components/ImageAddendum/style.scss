@@ -1,0 +1,15 @@
+.diagram-form-upload-image {
+   min-height: 314px !important;
+    .ant-upload-list {
+        height: 100%;
+        .ant-upload-list-item-container {
+            width: 270px !important;
+            height: 314px !important;
+        }
+        .ant-upload {
+            width: 270px !important;
+            height: 314px !important;
+        }
+    }
+
+}

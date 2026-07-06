@@ -1,0 +1,62 @@
+// background-image: linear-gradient(to left, rgb(111, 190, 237), rgb(44, 104, 177));
+.modalAddCompareAsset {
+  width: 80% !important;
+  .ant-modal-content {
+    width: 100%;
+    padding: 0px;
+
+    > .ant-modal-body {
+      width: 100%;
+    }
+
+    .ant-space {
+      width: 100%;
+      box-sizing: border-box;
+
+      .ant-space-item {
+        width: 100%;
+
+        .modalAdditionRequired-header {
+          border-radius: 8px 8px 0 0;
+          background-image: linear-gradient(
+            to left,
+            rgb(111, 190, 237),
+            rgb(44, 104, 177)
+          );
+          padding: 8px;
+          width: 100%;
+        }
+
+        > .modalAdditionRequired-header {
+          > .card-title-container > .title {
+            color: white !important;
+          }
+        }
+      }
+    }
+    .add-assets-form-container {
+      .ant-form-item-label {
+        padding-bottom: 0 !important;
+      }
+      .commant-wrapper-content {
+        color: red;
+        width: 100% !important;
+         .commant-header, .commant-footer {
+            margin: 0% !important;
+            margin-top: 4px !important;
+        }
+      }
+    }
+  }
+  .form-AdditionRequired {
+    padding: 0 8px;
+    .form-item-custom {
+      margin: 0;
+      .ant-form-item-no-colon {
+        span {
+          color: #919191;
+        }
+      }
+    }
+  }
+}

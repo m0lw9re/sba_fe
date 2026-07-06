@@ -1,0 +1,29 @@
+.chart-wrapper {
+  width: 100%;
+  height: 100%;
+  .chart-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .pie-chart {
+      width: 40% !important;
+      height: 100% !important;
+    }
+  }
+}
+
+.chart-container {
+  display: flex;
+}
+
+.legend-container {
+  float: right;
+}
+.table-category {
+  .chart-container {
+    path.recharts-sector:focus {
+      outline: none !important;
+    }
+  }
+}

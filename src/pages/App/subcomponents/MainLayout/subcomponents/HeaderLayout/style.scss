@@ -1,0 +1,64 @@
+@import "../../../../../../assets/styles/variables";
+
+.header-container {
+  height: 60px;
+  background: #ffffff;
+  padding: 0 20px !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+
+  .infoUserHeader {
+    .badge-bell-container {
+      .ant-badge-dot {
+        top: 10px !important;
+        right: 10px !important;
+        height: 8px;
+        width: 8px;
+      }
+    }
+
+    align-items: center;
+
+    .dividerInsideHeader {
+      border: 1px solid #e3e3e6;
+    }
+  }
+
+  .account-name,
+  .country-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    // line-height: 24px;
+    color: #000000;
+  }
+
+  .beside-account {
+    background: none;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .account-avatar {
+    background: none;
+    border: none;
+    font-size: 20px;
+  }
+
+  .notify-list-show {
+    display: block;
+  }
+
+  .notify-list-hide {
+    display: none;
+  }
+
+  .title-header {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3e2319;
+    padding-bottom: 0.25rem;
+  }
+}

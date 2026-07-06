@@ -1,0 +1,10 @@
+.search-select-google-map-container {
+  min-width: 400px;
+  .select-search-gmap {
+    max-width: 400px !important;
+  }
+}
+.select-custom {
+  display: flex;
+  align-items: center;
+}

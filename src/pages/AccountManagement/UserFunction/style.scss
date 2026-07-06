@@ -1,0 +1,18 @@
+.user-function-table-container {
+    .user-authorization-table>div>div>div>div>div>div>div>table>.ant-table-tbody>tr>td {
+        padding: 0px !important
+    }
+
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #2862AF;
+        border-color: #2862AF;
+    }
+
+    .ant-checkbox:hover .ant-checkbox-inner::after {
+        border-color: white;
+    }
+
+    .ant-checkbox-indeterminate .ant-checkbox-inner:after {
+        background-color: #2862AF;
+    }
+}

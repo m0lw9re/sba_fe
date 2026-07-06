@@ -1,0 +1,29 @@
+.user-function-table-container {
+  .user-function-table {
+    width: 100%;
+  }
+    .user-function-table>div>div>div>div>div>div>div>table>.ant-table-tbody>tr>td {
+        padding: 0px !important
+    }
+
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #2862AF;
+        border-color: #2862AF;
+    }
+
+    .ant-checkbox:hover .ant-checkbox-inner::after {
+        border-color: white;
+    }
+
+    .ant-checkbox-indeterminate .ant-checkbox-inner:after {
+        background-color: #2862AF;
+    }
+
+    .user-function-table>div>div>div>div>div>div>div>table>.ant-table-tbody>tr>td:first-child {
+        display: block;
+    }
+
+    .user-function-table>div>div>div>div>div>div>div>table>.ant-table-tbody>tr>td:last-child {
+        display: block;
+    }
+}

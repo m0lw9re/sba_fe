@@ -1,0 +1,60 @@
+.failedCreatePermission-modal{
+    width: 318px;
+    height: 278px;
+    .ant-modal-content {
+        background-color: #FFFFFF;
+        padding: 24px;
+        padding-bottom: 0;
+    }
+    .space-failedCreatePermission{
+        width: 100%;
+        .ant-space-item{
+            width: 100%;
+        }
+    }
+    .failed-title{
+        font-weight: 400;
+        font-size: 22px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .failed-title-main{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+    .failed-createPermission-button{
+        width: 100%;
+        height: 60px;
+        border-radius: 4px;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        :hover{
+            background: rgba(255, 255, 255, 0.2) !important;
+        }
+    }
+    .ant-col{
+        display: flex;
+        justify-content: center;
+    }
+    .cancel{
+        background: #FFFFFF;
+        border: rgba(255, 255, 255, 0.2);
+        color: rgba(0, 0, 0, 0.6);
+    }
+    .delete{
+        background: #FFFFFF;
+        border: #F25B60;
+        color: #F25B60;
+    }
+    .ant-divider{
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,52 @@
+.card-container-fee-table {
+  .dynamic-table-wrapper {
+    .ant-table-cell {
+      width: auto !important;
+    }
+
+    .ant-table-body {
+      overflow-x: auto !important;
+    }
+  }
+
+  .ant-form-item-control-input-content {
+    .ant-input-number-handler-wrap {
+      display: none;
+    }
+    .ant-input-number-input {
+      text-align: right;
+    }
+  }
+  .inline-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .ant-upload-wrapper {
+    max-width: 100px;
+  }
+
+  .date-picker-custom {
+    .ant-picker-input {
+      input,
+      span {
+        color: #000 !important;
+      }
+    }
+  }
+}
+
+.custom-modal {
+  .ant-modal-content {
+    width: 80vw;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -13%);
+    .ant-modal-body {
+      .custom-iframe {
+        width: 100%;
+        height: 75vh;
+      }
+    }
+  }
+}

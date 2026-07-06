@@ -1,0 +1,52 @@
+.modalEditSysFastExpertise {
+  .ant-modal-content {
+    width: 100%;
+    padding: 0px;
+
+    .space-sysFastRealPosition {
+      width: 100%;
+
+      .form-item-custom {
+        margin: 0;
+        align-items: center;
+
+        .ant-form-item-label {
+          margin-right: -4px;
+        }
+
+        .ant-form-item-no-colon {
+          span {
+            color: #919191;
+          }
+        }
+      }
+
+      .ant-space-item {
+        .ant-form-horizontal {
+          padding: 0 8px;
+        }
+
+        .ant-collapse-icon-position-end {
+          padding: 0 8px;
+        }
+
+        .modalSysFastRealPosition-header {
+          border-radius: 8px 8px 0 0;
+          background-image: linear-gradient(
+            to left,
+            rgb(111, 190, 237),
+            rgb(44, 104, 177)
+          );
+          padding: 8px;
+          width: 100%;
+        }
+
+        .modalSysFastRealPosition-header {
+          .card-title-container > .title {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

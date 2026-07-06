@@ -1,0 +1,23 @@
+.account-status-tag{
+    border-radius: 60px;
+    border: none;
+    font-style: normal;
+    width: 88px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    line-height: 18px;
+    text-align: end !important;
+}
+
+.success-tag{
+    background: rgba(50, 208, 34, 0.1);
+    color: #17A109;
+}
+
+.error-tag{
+    background: rgba(242, 91, 96, 0.1);
+    color: #F25B60;
+}

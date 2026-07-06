@@ -1,0 +1,112 @@
+.chart-wrapper {
+  width: 100%;
+  height: 100%;
+  .ant-space-item {
+    width: 100%;
+    height: 100%;
+    .chart-item {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      canvas {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+}
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.table-category {
+  .ant-space-item {
+    .button-exportReport {
+      height: 100%;
+      .ant-btn-icon {
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+    .button-fileStart {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px !important;
+      background-color: #d0a024 !important;
+      .ant-btn-icon {
+        svg {
+          width: 50px;
+          height: 50px;
+          padding: 6px;
+          fill: #fff;
+        }
+      }
+    }
+    .button-fileProgress {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px !important;
+      background: linear-gradient(180deg, #15a59c 0%, #299019 100%) !important;
+      .ant-btn-icon {
+        svg {
+          width: 50px;
+          height: 50px;
+          padding: 6px;
+          fill: #fff;
+        }
+      }
+    }
+    .button-fileComplte {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px !important;
+      background-color: #2a81d0 !important;
+      .ant-btn-icon {
+        svg {
+          width: 50px;
+          height: 50px;
+          padding: 6px;
+          fill: #fff;
+        }
+      }
+    }
+    .button-fileEnd {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px !important;
+      background-color: #7b6dff !important;
+      .ant-btn-icon {
+        svg {
+          width: 50px;
+          height: 50px;
+          padding: 6px;
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.categories-administratives-table-container {
+  .inline-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .ant-card-body .total-Page-BussinessFee {
+    position: absolute;
+    bottom: 8px;
+    left: 100px;
+  }
+}

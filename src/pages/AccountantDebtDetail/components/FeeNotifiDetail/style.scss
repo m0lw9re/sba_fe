@@ -1,0 +1,56 @@
+.card-container-debt-fee-table {
+  .ant-form-item-control-input-content {
+    .ant-input-number-handler-wrap {
+      display: none;
+    }
+    .ant-input-number-input {
+      text-align: right;
+    }
+  }
+  .inline-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .ant-upload-wrapper {
+    max-width: 100px;
+  }
+
+  .spin-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spin {
+    position: relative;
+    z-index: 2;
+    animation: rotate 2s infinite linear;
+  }
+
+  .date-picker-custom {
+    .ant-picker-input {
+      input,
+      span {
+        color: #000 !important;
+      }
+    }
+  }
+}
+
+.form-infor-debt {
+  .ant-picker-input {
+    input,
+    span {
+      color: #000 !important;
+    }
+  }
+}

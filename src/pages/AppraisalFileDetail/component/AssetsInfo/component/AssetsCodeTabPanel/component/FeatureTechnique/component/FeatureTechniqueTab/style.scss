@@ -1,0 +1,7 @@
+.feature-technique-contain {
+    .feature-technique-form {
+        .ant-form-item-required::before {
+            display: none !important;
+        }
+    }
+}

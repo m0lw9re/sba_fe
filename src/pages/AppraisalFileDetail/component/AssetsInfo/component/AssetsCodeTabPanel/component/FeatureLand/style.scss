@@ -1,0 +1,57 @@
+.feature-land-tab-custom {
+  > .ant-tabs-nav {
+    &::before {
+      content: none;
+    }
+    .ant-tabs-nav-wrap {
+      .ant-tabs-nav-list {
+        .ant-tabs-ink-bar {
+          background-color: #2862af;
+        }
+        .ant-tabs-tab {
+          padding-top: 8px;
+          padding-bottom: 8px;
+          .ant-tabs-tab-btn {
+            .ant-space-item {
+              height: 22px;
+              span {
+                margin: 0;
+                opacity: 0.6;
+              }
+              button {
+                width: 22px;
+                height: 22px;
+                span {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+          &:hover {
+            color: #2862af;
+            .ant-tabs-tab-btn {
+              color: #2862af;
+              .ant-space-item {
+                span {
+                  margin: 0;
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+        .ant-tabs-tab-active {
+          .ant-tabs-tab-btn {
+            color: #2862af;
+            .ant-space-item {
+              span {
+                margin: 0;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

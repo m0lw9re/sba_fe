@@ -1,0 +1,42 @@
+.upload-external-modal {
+  width: 600px !important;
+  .ant-upload-list-item {
+    // white-space: normal;
+    max-width: 400px;
+  }
+  .ant-modal-content {
+    width: 100%;
+    padding: 0px;
+
+    .space-assignment {
+      width: 100%;
+
+      .ant-space-item {
+        .ant-form-horizontal {
+          padding: 0 8px;
+        }
+
+        .ant-collapse-icon-position-end {
+          padding: 0 8px;
+        }
+
+        .upload-external-modal-header {
+          border-radius: 8px 8px 0 0;
+          background-image: linear-gradient(
+            to left,
+            rgb(111, 190, 237),
+            rgb(44, 104, 177)
+          );
+          padding: 8px;
+          width: 100%;
+        }
+
+        .upload-external-modal-header {
+          .card-title-container > .title {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

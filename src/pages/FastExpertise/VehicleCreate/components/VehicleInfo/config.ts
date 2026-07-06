@@ -1,0 +1,140 @@
+import { TYPE_FIELD } from "constant/enums";
+
+const { INPUT, SELECT, INPUT_NUMBER } = TYPE_FIELD;
+const css = { xs: 24, sm: 24, md: 24, lg: 12, xl: 12 };
+const wrapperCol = { xs: 20, sm: 20, md: 20, lg: 16, xl: 16 };
+const labelCol = { xs: 4, sm: 4, md: 4, lg: 8, xl: 8 };
+
+const fields: any[] = [
+  {
+    key: 3,
+    label: "Nhãn hiệu",
+    name: "latitude",
+    type: INPUT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  {
+    key: 3,
+    label: "Số loại/Model",
+    name: "longitude",
+    type: INPUT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  {
+    key: 1,
+    label: "Màu sơn",
+    name: "totalFloorArea",
+    type: INPUT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  {
+    key: 2,
+    label: "Năm sản xuất",
+    name: "areaInplan",
+    type: INPUT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  {
+    key: 3,
+    label: "Nước sản xuất",
+    name: "areaUnplan",
+    type: INPUT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+
+  {
+    key: 4,
+    label: "Hộp số",
+    name: "gearBoxs",
+    type: SELECT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  {
+    key: 5,
+    label: "Công thức bánh xe",
+    name: "wheelFormulas",
+    type: SELECT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  {
+    key: 6,
+    label: "Loại nhiên liệu",
+    name: "numberOfFacade",
+    type: INPUT,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+
+  {
+    key: 3,
+    label: "Số km đã qua sử dụng",
+    name: "radius",
+    type: INPUT_NUMBER,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  {
+    key: 7,
+    label: "Chất lượng còn lại (%)",
+    name: "facadeLength",
+    type: INPUT_NUMBER,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+    percentable: true,
+  },
+  {
+    key: 7,
+    label: "Số người chuyên chở",
+    name: "realPersonCarry",
+    type: INPUT_NUMBER,
+    css: css,
+    wrapperCol: wrapperCol,
+    labelCol: labelCol,
+  },
+  // {
+  //   key: 8,
+  //   label: "Kích thước lòng thùng xe",
+  //   name: "roadInPriceRange",
+  //   type: INPUT,
+  //   css: css,
+  //   wrapperCol: wrapperCol,
+  //   labelCol: labelCol,
+  // },
+  // {
+  //   key: 9,
+  //   label: "Khối lượng hàng chuyên chở theo TK/CP TGGT",
+  //   name: "roadContiguousTypeId",
+  //   type: INPUT,
+  //   css: css,
+  //   wrapperCol: wrapperCol,
+  //   labelCol: labelCol,
+  // },
+  // {
+  //   key: 10,
+  //   label: "Khối lượng hàng chuyên kéo theo TK/CP TGGT",
+  //   name: "positionId",
+  //   type: INPUT,
+  //   css: css,
+  //   wrapperCol: wrapperCol,
+  //   labelCol: labelCol,
+  // },
+];
+
+export { fields };

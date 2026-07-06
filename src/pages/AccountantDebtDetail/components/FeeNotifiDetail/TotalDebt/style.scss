@@ -1,0 +1,35 @@
+.total-debt-container {
+  .commonInfo-wrapper {
+    .form-item-custom {
+      width: calc(100% - 24px);
+      margin: 0;
+      .form-input-custom {
+        width: calc(100% + 24px);
+      }
+      .ant-form-item-no-colon {
+        span {
+          color: #919191;
+        }
+      }
+      .warn-typography {
+        margin-top: 3px;
+        display: block;
+      }
+    }
+    // .btn-fields {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   .btn-fields__edit {
+    //     margin-right: 10px;
+    //   }
+    // }
+    .ant-picker-input {
+      input {
+        color: #000 !important;
+      }
+    }
+    .ant-input-number-input{
+      text-align: right;
+    }
+  }
+}

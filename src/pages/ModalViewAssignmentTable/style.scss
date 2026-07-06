@@ -1,0 +1,50 @@
+.modalViewAssignmentModal {
+  width: 1000px !important;
+
+  .ant-modal-content {
+    width: 100%;
+    padding: 0px;
+
+    .ant-modal-body {
+      width: 100%;
+      .ant-card-bordered {
+        width: 100%;
+      }
+    }
+
+    .space-assignment {
+      width: 100%;
+
+      .ant-space-item {
+        .ant-row {
+          margin: 0 !important;
+        }
+
+        .ant-form-horizontal {
+          padding: 0 8px;
+        }
+
+        .ant-collapse-icon-position-end {
+          padding: 0 8px;
+        }
+
+        .modalViewAssignmentModal-header {
+          border-radius: 8px 8px 0 0;
+          background-image: linear-gradient(
+            to left,
+            rgb(111, 190, 237),
+            rgb(44, 104, 177)
+          );
+          padding: 8px;
+          width: 100%;
+        }
+
+        .modalViewAssignmentModal-header {
+          .card-title-container .title {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

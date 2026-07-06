@@ -1,0 +1,19 @@
+.table-category {
+  .ant-space-item {
+    .button-exportReport {
+      height: 100%;
+      .ant-btn-icon {
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}
+
+.detail-report-debt-total-row {
+  .ant-table-cell {
+    font-weight: bold;
+  }
+}

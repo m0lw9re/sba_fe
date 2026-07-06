@@ -1,0 +1,17 @@
+.roleSetting-card-wrapper > .ant-card-body {
+  padding: 0;
+}
+.roleSetting-card-wrapper {
+  .ant-space-vertical {
+    width: 100%;
+  }
+  .ant-card-body > .ant-divider {
+    margin: 8px 0 8px 0;
+  }
+}
+.btn-role-edit {
+  background: none;
+  box-shadow: none;
+  border: none;
+  color: #2862af;
+}

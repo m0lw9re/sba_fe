@@ -1,0 +1,103 @@
+.otp-modal {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &-heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  &-description {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 14px;
+    color: #000000B2
+  }
+  &-timeleft {
+    text-align: center;
+    font-size: 16px;
+    span {
+      color: #2862af;
+    }
+  }
+}
+.otp-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .otp-input-wrapper {
+    margin-inline-end: 12px;
+  }
+  .otp-input {
+    width: 40px !important;
+    height: 48px !important;
+    text-align: center;
+  }
+}
+.group-button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 18px;
+}
+.btn-confirm {
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 auto;
+  background-color: #2862af;
+}
+.btn-confirm:hover {
+  background-color: #4771a9 !important;
+}
+.btn-sendback {
+  margin: 0 auto;
+  font-weight: 700;
+  color: #2862af;
+}
+.btn-sendback:hover {
+  background-color: unset !important;
+}
+
+.success-modal {
+  text-align: center;
+  .ant-modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 314px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 34px;
+  }
+  &-icon {
+    display: flex;
+    margin-bottom: 28px;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #2862AF;
+  }
+}

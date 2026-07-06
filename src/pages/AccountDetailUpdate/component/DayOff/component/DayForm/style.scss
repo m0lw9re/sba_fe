@@ -1,0 +1,26 @@
+.day-off-container {
+  .ant-picker-calendar-header {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    .ant-radio-group {
+      display: none;
+    }
+  }
+  .ant-picker-panel {
+    .ant-picker-cell-inner {
+      // display: flex;
+      // flex-direction: column-reverse;
+      // .ant-picker-calendar-date-value {
+      //   position: relative;
+      //   right: 23%;
+      // }
+      // .ant-picker-calendar-date-content {
+      //   .btn-edit-vacation {
+      //     position: absolute;
+      //     top: 0;
+      //     right: 0;
+      //   }
+      // }
+    }
+  }
+}

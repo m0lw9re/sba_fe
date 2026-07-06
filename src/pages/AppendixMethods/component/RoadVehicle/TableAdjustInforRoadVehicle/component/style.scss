@@ -1,0 +1,44 @@
+// background-image: linear-gradient(to left, rgb(111, 190, 237), rgb(44, 104, 177));
+.modalAdditionRequired {
+  // width: 650px !important;
+  .ant-modal-content {
+    width: 100%;
+    padding: 0px;
+
+    .ant-space {
+      width: 100%;
+
+      .ant-space-item {
+        width: 100%;
+
+        .modalAdditionRequired-header {
+          border-radius: 8px 8px 0 0;
+          background-image: linear-gradient(
+            to left,
+            rgb(111, 190, 237),
+            rgb(44, 104, 177)
+          );
+          padding: 8px;
+          width: 100%;
+        }
+
+        > .modalAdditionRequired-header {
+          > .card-title-container > .title {
+            color: white !important;
+          }
+        }
+      }
+    }
+  }
+  .form-AdditionRequired {
+    padding: 0 8px;
+    .form-item-custom {
+      margin: 0;
+      .ant-form-item-no-colon {
+        span {
+          color: #919191;
+        }
+      }
+    }
+  }
+}

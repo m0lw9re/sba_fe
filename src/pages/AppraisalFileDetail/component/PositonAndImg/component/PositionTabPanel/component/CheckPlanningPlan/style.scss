@@ -1,0 +1,32 @@
+.planning-map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .capture-btn {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    z-index: 100;
+    opacity: .8;   
+  }
+
+  .btn-save {
+    width: 50%;
+    height: 36px;
+    border-radius: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #2862af;
+    margin: 12px;
+    color: white;
+    &:hover {
+      opacity: 0.8;
+    }
+}
+}

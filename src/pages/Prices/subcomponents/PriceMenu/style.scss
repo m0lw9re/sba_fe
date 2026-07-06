@@ -1,0 +1,63 @@
+.prices-menu-card{
+    .ant-card-body{
+        padding: 16px
+    }
+    .price-menu-space{
+        width: 100%;
+        .prices-menu-card-title{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            color: #000000;
+            padding-bottom: 10px;
+        }
+        .data-input-field{
+            // height: 48px;
+            width: 100%;
+        }
+        .ant-menu-submenu-title{
+            height: 40px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .ant-menu-root{
+            border-right: none;
+        }
+        .ant-menu-sub{
+            background: none !important;
+            .ant-menu-item-only-child{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                height: 40px;
+            }
+        }
+        .ant-menu-item{
+            height: 40px;
+            .ant-menu-title-content{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        .ant-menu-submenu{
+            .ant-menu-submenu-title{
+                a{
+                    color: rgba(0, 0, 0, 0.88) !important;;
+                }
+            }
+        }
+        .ant-menu-submenu-selected{
+            .ant-menu-submenu-title{
+                a{
+                    color: #1677ff !important;
+                }
+            }
+        }
+    }
+    
+}

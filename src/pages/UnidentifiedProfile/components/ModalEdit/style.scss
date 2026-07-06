@@ -1,0 +1,23 @@
+.undefined-profile-modal-edit-container {
+  width: 80vw !important;
+  .ant-modal-content {
+    width: 100%;
+    padding: 0;
+    .unidentified-profile-table-container {
+      padding: 0 12px;
+    }
+  }
+  .modal-header {
+    border-radius: 8px 8px 0 0;
+    background-image: linear-gradient(
+      to left,
+      rgb(111, 190, 237),
+      rgb(44, 104, 177)
+    );
+    padding: 8px;
+    height: 56px;
+    .title {
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.table-category {
+  .ant-space-item {
+    .button-complete {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px !important;
+      background: linear-gradient(180deg, #15a59c 0%, #299019 100%);
+      .ant-btn-icon {
+        svg {
+          width: 50px;
+          height: 50px;
+          padding: 6px;
+          fill: #fff;
+        }
+      }
+    }
+    .button-CompleteProgress {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px !important;
+      background: #2A81D0;
+      .ant-btn-icon {
+        svg {
+          width: 50px;
+          height: 50px;
+          padding: 6px;
+          fill: #fff;
+        }
+      }
+    }
+    .button-FailProgress {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px !important;
+      background-color: #7b6dff;
+      .ant-btn-icon {
+        svg {
+          width: 50px;
+          height: 50px;
+          padding: 6px;
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

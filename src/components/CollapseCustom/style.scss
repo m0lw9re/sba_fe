@@ -1,0 +1,27 @@
+.collapse-wrapper {
+  background: "transparent";
+  > .ant-collapse-item {
+    margin-bottom: 8px !important;
+    .ant-collapse-content-box {
+      padding: 0px 8px 8px 8px !important;
+    }
+    .ant-collapse-header {
+      padding: 8px !important;
+    }
+  }
+}
+
+.collapse-wrapper-inner {
+  background: white;
+  > .ant-collapse-item {
+    border: 1px solid #efefef !important;
+    border-radius: 4px !important;
+    margin-bottom: 8px !important;
+    .ant-collapse-content-box {
+      padding: 0px 8px 8px 8px !important;
+    }
+    .ant-collapse-header {
+      padding: 8px !important;
+    }
+  }
+}

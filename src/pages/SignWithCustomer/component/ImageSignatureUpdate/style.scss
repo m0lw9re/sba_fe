@@ -1,0 +1,27 @@
+.diagram-form-upload-signature {
+    height: 200px;
+    width: 100%;
+    
+    .ant-upload-list-picture-card {
+        height: 100%;
+    }
+
+    .ant-upload-list-picture-card>.ant-upload-list-item-container {
+        width: 100% !important;
+        height: 100% !important;
+        
+    }
+    .ant-upload-list-picture-card>.ant-upload.ant-upload-select {
+        width: 100%;
+        height: 100%;
+        margin-inline-end: 8px;
+        margin-bottom: 8px;
+        text-align: center;
+        vertical-align: top;
+        background-color: rgba(0, 0, 0, 0.02);
+        border: 1px dashed #d9d9d9;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: border-color 0.3s
+    }
+}

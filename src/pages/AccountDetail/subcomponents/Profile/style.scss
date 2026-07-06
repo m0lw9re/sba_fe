@@ -1,0 +1,28 @@
+.acc-profile-wrapper{
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+.acc-profile-wrapper{
+    .ant-space-item > .ant-divider{
+        margin: 0;
+    }
+}
+.acc-detail-content_rigth{
+    margin-left: 57px;
+    .acc-detail-info{
+        list-style: none;
+        display: flex;
+        .acc-detail-info_lable{
+            .acc-detail-info_lable-item{
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+        .acc-detail-info_value{
+            margin-left: 38px;
+            .acc-detail-info_value-item{
+                color: #000;
+            }
+        }
+    }
+}

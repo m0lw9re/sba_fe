@@ -1,0 +1,22 @@
+.status-tag{
+    border-radius: 60px;
+    border: none;
+    font-style: normal;
+    width: 88px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    line-height: 18px;
+    text-align: end !important;
+}
+.success-tag{
+    background: #32D0221A;
+    color: #35DA7F;
+}
+
+.error-tag{
+    background: rgba(242, 91, 96, 0.1);
+    color: #F25B60;
+}

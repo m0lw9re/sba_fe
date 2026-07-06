@@ -1,0 +1,15 @@
+.modalViewTransaction {
+  width: 950px !important;
+
+  .ant-modal-content {
+    width: 100%;
+    padding: 0px;
+
+    .ant-modal-body {
+      width: 100%;
+      .ant-card-bordered {
+        width: 100%;
+      }
+    }
+  }
+}

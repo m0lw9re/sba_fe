@@ -1,0 +1,19 @@
+.title-area {
+  margin-bottom: 16px;
+}
+.page-container {
+  .table-category .ant-card-body {
+    padding: 4px 8px;
+  }
+  .table-category .ant-card-body .total-Page-Transaction {
+    position: absolute;
+    bottom: 8px;
+    left: 100px;
+  }
+  .filter-category .ant-card-body {
+    padding: 4px 8px;
+  }
+  .filter-category .ant-card-body .ant-space-item .ant-form-item {
+    margin-bottom: 4px;
+  }
+}

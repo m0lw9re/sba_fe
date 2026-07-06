@@ -1,0 +1,39 @@
+import { SBAAxiosClient } from "./base";
+import { LOCAL_STORAGE_KEY, TYPE_FIELD } from "constant/enums";
+
+export const exportExcelReportCompleteFile = {
+  exportExcell: (params?: any, type?: "tab1" | "tab2" | "tab3") => {
+    let url =
+      type === "tab1"
+        ? "/bussiness/api/v1/statistic/finish/dashboard/export_excel"
+        : type === "tab2"
+        ? "/bussiness/api/v1/statistic/finish/time/export_excel"
+        : "/bussiness/api/v1/statistic/finish/detail/export_excel";
+
+    const filteredParam = Object.fromEntries(
+      Object.entries(params || {}).filter(
+        ([key, value]) => value !== null && value !== undefined
+      )
+    );
+
+    let isFirstParam = true;
+    for (const key in filteredParam) {
+      if (Object.prototype.hasOwnProperty.call(filteredParam, key)) {
+        if (isFirstParam) {
+          url += `?${key}=${filteredParam[key]}`;
+          isFirstParam = false;
+        } else {
+          url += `&${key}=${filteredParam[key]}`;
+        }
+      }
+    }
+
+    return SBAAxiosClient(url, {
+      method: "GET",
+      responseType: "arraybuffer",
+      headers: {
+        x_access_token: LOCAL_STORAGE_KEY.ACCESS_TOKEN,
+      },
+    });
+  },
+};

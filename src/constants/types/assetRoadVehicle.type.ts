@@ -1,0 +1,117 @@
+import {
+  RiskDetail,
+  AssetImages,
+  AssetOwners,
+  LegalInformation,
+} from "constants/types/assetCommon.type";
+
+export type AssetRoadVehicle = {
+  assetId: string;
+  assetCode: string | null;
+  appraisalPurposeId: number | null;
+  vehicleBrandId: number | null;
+  vehicleModelId: number | null;
+  legalColor: string | null;
+  legalYearMfg: number | null;
+  legalCountryMfgId: number | null;
+  legalGearBoxId: number | null;
+  legalWheelFormulaId: number | null;
+  legalFuelId: number | null;
+  legalVehicleIdNumber: string | null;
+  legalEngineNumber: string | null;
+  legalPlateNumber: string | null;
+  legalOverallDims: string | null;
+  legalWheelBase: string | null;
+  legalKerbMass: number | null;
+  legalDesignMass: number | null;
+  legalPersonCarry: number | null;
+  legalEngineDisp: number | null;
+  legalMaxOutputRpm: string | null;
+  legalInsideContainer: string | null;
+  legalDesignPayload: number | null;
+  legalDesignTowedMass: number | null;
+  realColor: string | null;
+  realYearMfg: number | null;
+  realCountryMfgId: number | null;
+  realGearBoxId: number | null;
+  realWheelFormulaId: number | null;
+  realFuelId: number | null;
+  realVehicleIdNumber: string | null;
+  realEngineNumber: string | null;
+  realPlateNumber: string | null;
+  realOverallDims: string | null;
+  realWheelBase: string | null;
+  realKerbMass: number | null;
+  realDesignMass: number | null;
+  realPersonCarry: number | null;
+  realEngineDisp: number | null;
+  realMaxOutputRpm: string | null;
+  realInsideContainer: string | null;
+  realDesignPayload: number | null;
+  realDesignTowedMass: number | null;
+  vehicleState: string | null;
+  odo: number | null;
+  currentUseSituation: number | null;
+  extendEquipment: string | null;
+  remainQuality: number | null;
+  usingPurposeTypeId: number | null;
+  usingOriginTypeId: number | null;
+  usingPeriodId: number | null;
+  liquidity: number | null;
+  isDispute: number | null;
+  disputeInfor: string | null;
+  note: string | null;
+  appraisalDate: string | null;
+  expiredDate: string | null;
+  totalPrice: number | null;
+  whoCreate: string | null;
+  dateCreate: string | null;
+  dateModify: string | null;
+  isFinish: boolean | null;
+  assetImages: Array<AssetImages>;
+  assetOwners: Array<AssetOwners>;
+  legalInformations: Array<LegalInformation>;
+  riskDetailDtos: Array<RiskDetail>;
+};
+
+
+export type SpecificationRoadVehicleProperty = {
+  legalColor: string | null;
+  legalYearMfg: number | null;
+  legalCountryMfgId: number | null;
+  legalGearBoxId: number | null;
+  legalWheelFormulaId: number | null;
+  legalFuelId: number | null;
+  legalVehicleIdNumber: string | null;
+  legalEngineNumber: string | null;
+  legalPlateNumber: string | null;
+  legalOverallDims: string | null;
+  legalWheelBase: string | null;
+  legalKerbMass: number | null;
+  legalDesignMass: number | null;
+  legalPersonCarry: number | null;
+  legalEngineDisp: number | null;
+  legalMaxOutputRpm: string | null;
+  legalInsideContainer: string | null;
+  legalDesignPayload: number | null;
+  legalDesignTowedMass: number | null;
+  realColor: string | null;
+  realYearMfg: number | null;
+  realCountryMfgId: number | null;
+  realGearBoxId: number | null;
+  realWheelFormulaId: number | null;
+  realFuelId: number | null;
+  realVehicleIdNumber: string | null;
+  realEngineNumber: string | null;
+  realPlateNumber: string | null;
+  realOverallDims: string | null;
+  realWheelBase: string | null;
+  realKerbMass: number | null;
+  realDesignMass: number | null;
+  realPersonCarry: number | null;
+  realEngineDisp: number | null;
+  realMaxOutputRpm: string | null;
+  realInsideContainer: string | null;
+  realDesignPayload: number | null;
+  realDesignTowedMass: number | null;
+};

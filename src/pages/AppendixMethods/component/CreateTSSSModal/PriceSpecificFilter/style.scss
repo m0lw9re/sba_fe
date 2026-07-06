@@ -1,0 +1,19 @@
+.price-specific-filter-container {
+    .blue-text {
+        color: var(--colors-use-primary, #2862AF);
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .form-item-manual {
+        margin-bottom: 0 !important;
+        .ant-form-item-label {
+            .ant-form-item-no-colon {
+                opacity: 0.6;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.urban-land-table-container {
+    table {
+        border: 1px solid var(--colors-stroke-border-stroke, rgba(0, 0, 0, 0.07));
+        border-collapse: 1px solid var(--colors-stroke-border-stroke, #F2F2F2);
+        tr {
+            th {
+                text-align: left !important;
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 22px;
+                opacity: 0.7;
+                padding: 2px;
+                border-bottom: 1px solid var(--colors-stroke-border-stroke, rgba(0, 0, 0, 0.07));
+            }
+            .col2{
+                border-left: 2px solid var(--colors-stroke-border-stroke, rgba(0, 0, 0, 0.07));
+                height: 22px;
+            }
+            .col3{
+                border-left: 2px solid var(--colors-stroke-border-stroke, rgba(0, 0, 0, 0.07));
+                border-right: 2px solid var(--colors-stroke-border-stroke, rgba(0, 0, 0, 0.07));
+                height: 22px;
+            }
+        }
+        .last-row{
+            th{
+                border-bottom: none;
+            }
+        }
+    }
+
+    table {
+        thead {
+            tr {
+                background: var(--neutral-2, #FAFAFA);
+                th {
+                    background: none;
+                    text-align: center !important;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

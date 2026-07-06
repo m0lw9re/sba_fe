@@ -1,0 +1,55 @@
+// background-image: linear-gradient(to left, rgb(111, 190, 237), rgb(44, 104, 177));
+.modalRefuseToPrice {
+  width: 650px !important;
+  .ant-modal-content {
+    width: 100%;
+    padding: 0px;
+
+    .space-assignment {
+      width: 100%;
+
+      .ant-space-item {
+        .btn-refuse:disabled {
+          background-color: #2863af14 !important;
+          border: 1px solid #d7d7d7 !important;
+          color: #d7d7d7 !important;
+        }
+        .ant-form-horizontal {
+          padding: 0 8px;
+        }
+
+        .ant-collapse-icon-position-end {
+          padding: 0 8px;
+        }
+
+        .modalRefuseToPrice-header {
+          border-radius: 8px 8px 0 0;
+          background-image: linear-gradient(
+            to left,
+            rgb(111, 190, 237),
+            rgb(44, 104, 177)
+          );
+          padding: 8px;
+          width: 100%;
+        }
+
+        .modalRefuseToPrice-header {
+          .card-title-container .title {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  // .form-ModalRefuseToPrice {
+  //   padding: 0 8px;
+  //   .form-item-custom {
+  //     margin: 0;
+  //     .ant-form-item-no-colon {
+  //       span {
+  //         color: #919191;
+  //       }
+  //     }
+  //   }
+  // }
+}

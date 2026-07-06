@@ -1,0 +1,23 @@
+.result-expertise-card {
+  margin-top: -9px;
+  margin-bottom: -2px;
+  > .ant-card-body {
+    > .ant-space {
+      > .ant-space-item {
+        > .ant-form {
+          .ant-input {
+            font-weight: 700 !important;
+            border: none !important;
+            outline: none !important;
+            background-color: transparent !important;
+          }
+        }
+      }
+    }
+  }
+}
+.result-expertise-heading {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}

@@ -1,0 +1,25 @@
+.title-wrapper {
+    .title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .action-wrapper {
+        .btn-action {
+            height: 36px;
+            border-radius: 4px;
+            background-color: #2862af;
+            color: white;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.sign-content{
+    .ant-space-item{
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+.ant-space-item {
+  .disabled:disabled {
+    svg {
+      g {
+        path {
+          fill: #d2d2d2;
+        }
+      }
+    }
+  }
+  .disabled-delete {
+    .ant-btn {
+      svg {
+        g {
+          path {
+            // fill: rgb(242, 91, 96, 0.7);
+            stroke: rgb(242, 91, 96, 0.5);
+          }
+        }
+      }
+    }
+  }
+}

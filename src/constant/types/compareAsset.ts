@@ -1,0 +1,195 @@
+type ComparedAssetLandType = {
+  orderBy?: number | null;
+  stt?: number | null;
+  key?: string;
+  assetChildId?: number | null;
+  assetId?: string | null;
+  assetCode?: string | null;
+  dataSourceName?: string;
+  infoSourceName?: string;
+  provinceId: string | null;
+  districtId: string | null;
+  wardId: string | null;
+  positionId: string | null;
+  usingPurposeId?: number | null;
+  usingPurposeName?: string | null;
+  usingPurposeConsolidationIds?: number[] | null;
+  combineUsingPurposeConsolidationDetail?: string | null;
+  dataSourceId?: number | null;
+  infoSourceId?: number | null;
+  contact: string;
+  transactionStatus: string;
+  transactionTime: string | null;
+  appraisalTime: string | null;
+  addressProvince: string | null;
+  addressProvinceName?: string;
+  addressDistrict: string | null;
+  addressDistrictName?: string;
+  addressWard: string | null;
+  addressWardName?: string;
+  addressStreet: string;
+  addressDetail: string;
+  address: string;
+  positionName?: string | null;
+  mapSheetNumber: string | null;
+  landPlotNumber: string | null;
+  latitude: number | null;
+  longitude: number | null;
+  assetImage: string | null;
+  areaWidth: number | null;
+  landLength: number | null;
+  areaInplan: number | null;
+  areaUnplan: number | null;
+  facadeLength: number | null;
+  numberOfFacade: number | null;
+  shape: string;
+  widthToMainRoad: number | null;
+  distanceToMainRoad: number | null;
+  businessAdvantage?: string;
+  businessAdvantageId?: number | null;
+  legal: string;
+  traffic: string | null;
+  security: string | null;
+  infrastructure: string;
+  projectName: string | null;
+  note: string | null;
+  transactionPrice: number | null;
+  estimatePrice: number | null;
+  totalFloorArea: number | null;
+  constructionUnitPrice: number | null;
+  remainQuality: number | null;
+  constructionPrice: number;
+  landUnitPrice: number;
+  landPrice: number | null;
+  rentDayPrice: number | null;
+  rentMonthPrice: number | null;
+  rentYearPrice: number | null;
+  estimateRentYearPrice: number | null;
+  rentYearUnitPrice: number | null;
+  totalValue: number | null;
+  coordinate: {
+    latitude: number | null;
+    longitude: number | null;
+  };
+  whoCreate: string;
+  dateCreate: string;
+  approved: boolean | null;
+  sentiment: string | null;
+  sentimentApproved: string | null;
+  storedTypeId: number | null;
+  storedType: string;
+  priceInPlan: number | null;
+  structure: string;
+  frontage: string;
+  surfaces: string;
+
+  description?: string;
+  customerName?: string | null;
+  customerIdentity?: string | null;
+  codeBook?: string | null;
+  isFastValuation?: boolean | null;
+  valuationIds?: string | null;
+  valuations?: any;
+  valuationHistories?: any;
+  constructions?: any;
+  provinces?: any;
+  districts?: any;
+  wards?: any;
+  roadContiguousTypeId?: string;
+  roadInPriceRange?: string;
+  roadInPriceRangeId?: string | null;
+  addressStreetFrom?: string;
+  addressStreetTo?: string;
+  unPlanPrice?: number | null;
+  geographicDescription: string;
+  roadContiguousTypeName?: string;
+  optimizePrice?: number | null;
+  radius?: number | null;
+  optimizePrices?: number | null;
+  commonArea?: number | null;
+  privateArea?: number | null;
+  utilities?: string;
+  distanceToAsset?: number | null;
+  usingPeriod: string | null;
+  planning?: string | null;
+  landLengthDetail?: string | null;
+  percent?: number | null;
+  lGPrice?: number | null;
+  lGUnitPrice?: number | null;
+};
+
+type ComparedAssetRoadVehcileType = {
+  key?: string;
+  assetCode: string | null;
+  dataSourceId: string | null;
+  infoSourceId: string | null;
+  contact: string | null;
+  transactionStatus: string | null;
+  transactionTime: Date | null;
+
+  assetImage: string | null;
+  vehicleBrand: string | null;
+  vehicleModel: string | null;
+  vehicleColor: string | null;
+  maxOutputRpm: number | null;
+  yearMfg: number | null;
+  countryMfg: string | null;
+  odo: number | null;
+  remainQuality: number | null;
+  transactionPrice: number | null;
+  estimatePrice: number | null;
+  description: string | null;
+};
+
+type ComparedAssetWaterVehcileType = {
+  key?: string;
+  assetCode: string;
+  dataSourceId: string | null;
+  infoSourceId: string | null;
+  contact: string | null;
+  transactionStatus: string | null;
+  transactionTime: Date | null;
+
+  assetImage: string | null;
+  name: string | null;
+  model: number | null;
+  countryMfg: string | null;
+  yearMfg: number | null;
+  shipbuildingBrand: string | null;
+  personCarry: number | null;
+  machinePower: number | null;
+  deadWeight: number | null;
+  remainQuality: number | null;
+  transactionPrice: number | null;
+  sentiment: string | null;
+};
+
+type ComparedAssetDeviceType = {
+  key?: string;
+  assetCode: string | null;
+  dataSourceId: string | null;
+  infoSourceId: string | null;
+  contact: string | null;
+  transactionStatus: string | null;
+  transactionTime: Date | null;
+
+  assetImage: string | null;
+  name: string | null;
+  brand: string | null;
+  model: string | null;
+  yearMfg: number | null;
+  legalBrand: string | null;
+  manufacturer: string | null;
+  power: number | null;
+  remainQuality: number | null;
+  transactionPrice: number | null;
+  estimatePrice: number | null;
+  note: string | null;
+};
+
+export type {
+  ComparedAssetDeviceType,
+  ComparedAssetLandType,
+  ComparedAssetRoadVehcileType,
+  ComparedAssetWaterVehcileType,
+};

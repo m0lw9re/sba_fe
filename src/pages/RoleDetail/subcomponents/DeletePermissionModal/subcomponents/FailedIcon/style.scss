@@ -1,0 +1,19 @@
+.failedIcon-container{
+    width: 80px;
+    height: 80px;
+    background: rgba(242, 91, 96, 0.1);
+    border-radius: 42.8571px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11.4286px;
+    .failedIcon-wrapper{
+        width: 57.14px;
+        height: 57.14px;
+        background: linear-gradient(270deg, #DB3B40 0%, #ED8666 100%);
+        border-radius: 42.8571px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

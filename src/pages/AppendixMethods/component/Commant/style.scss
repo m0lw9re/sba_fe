@@ -1,0 +1,24 @@
+.commant-wrapper {
+    padding-bottom: 12px;
+    >.ant-card-body {
+        .commant-wrapper-content {
+            color: red;
+            width: 100% !important;
+             .commant-header, .commant-footer {
+                margin: 0% !important;
+            }
+            .ant-input-affix-wrapper {
+                height: auto;
+                min-height: 80px;
+                .ant-input {
+                   min-height: 80px !important;
+                }
+            }
+            .commant-footer {
+                display: block;
+                text-align: right;
+            }
+        }
+
+    }
+}

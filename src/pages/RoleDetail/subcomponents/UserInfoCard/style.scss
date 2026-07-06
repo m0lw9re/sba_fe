@@ -1,0 +1,11 @@
+.user-info-card {
+  .key-text {
+    color: rgba(0, 0, 0);
+  }
+  .ant-card-body > .ant-divider {
+    margin: 8px 8px 0;
+  }
+}
+.user-info-card > .ant-card-body {
+  padding: 0;
+}

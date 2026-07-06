@@ -1,0 +1,15 @@
+.list-btn-act {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    .button-act {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+        .icons {
+            font-size: 16px;
+        }
+    }
+}

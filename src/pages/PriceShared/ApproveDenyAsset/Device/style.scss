@@ -1,0 +1,16 @@
+.approve-deny-asset-land-using-container {
+    .btn-bottom {
+        height: 36px;
+        border-radius: 4px;
+        color: white;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+}

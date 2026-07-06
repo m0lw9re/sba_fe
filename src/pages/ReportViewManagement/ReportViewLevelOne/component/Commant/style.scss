@@ -1,0 +1,16 @@
+.commant-wrapper {
+    >.ant-card-body {
+        .commant-wrapper-content {
+            color: red;
+            width: 100% !important;
+             .commant-header, .commant-footer {
+                margin: 0% !important;
+            }
+            .commant-footer {
+                display: block;
+                text-align: right;
+            }
+        }
+
+    }
+}

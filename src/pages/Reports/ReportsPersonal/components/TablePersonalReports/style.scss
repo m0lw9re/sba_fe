@@ -1,0 +1,69 @@
+.table-category {
+  .ant-space-item {
+    .button-exportReport {
+      height: 100%;
+      .ant-btn-icon {
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+    .button-fileStart {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px !important;
+      background-color: #d0a024 !important;
+      .ant-btn-icon {
+        svg {
+          width: 50px;
+          height: 50px;
+          padding: 6px;
+          fill: #fff;
+        }
+      }
+    }
+    .button-fileProgress {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px !important;
+      background: linear-gradient(180deg, #15a59c 0%, #299019 100%) !important;
+      .ant-btn-icon {
+        svg {
+          width: 50px;
+          height: 50px;
+          padding: 6px;
+          fill: #fff;
+        }
+      }
+    }
+    .button-fileComplte {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px !important;
+      background-color: #2a81d0 !important;
+      .ant-btn-icon {
+        svg {
+          width: 50px;
+          height: 50px;
+          padding: 6px;
+          fill: #fff;
+        }
+      }
+    }
+    .button-fileEnd {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px !important;
+      background-color: #7b6dff !important;
+      .ant-btn-icon {
+        svg {
+          width: 50px;
+          height: 50px;
+          padding: 6px;
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

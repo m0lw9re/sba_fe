@@ -1,0 +1,31 @@
+.table-legal {
+  .ant-table-cell {
+    padding: 2px !important;
+  }
+  .ant-pagination-item {
+    height: 26px;
+    min-width: 28px;
+    a {
+      color: rgba(0, 0, 0, 0.7) !important;
+      line-height: 26px;
+    }
+  }
+
+  .ant-pagination-item-active {
+    background-color: #000000;
+    border: 1px solid #e0e0e0;
+    border-radius: 100%;
+
+    a {
+      color: #ffffff !important;
+    }
+  }
+}
+
+.table-category {
+  .ant-card-body .total-Page-HSPLPTDT {
+    position: absolute;
+    bottom: 8px;
+    left: 100px;
+  }
+}

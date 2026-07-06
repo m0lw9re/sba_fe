@@ -1,0 +1,15 @@
+.otherInfo-wrapper{
+    .form-item-custom{
+        width: calc(100% - 24px);
+        margin: 0;
+        align-items: center;
+        .form-input-custom{
+            width: calc(100% + 24px);
+        }
+        .ant-form-item-no-colon{
+            span{
+                color: #919191;
+            }
+        }
+    }
+}

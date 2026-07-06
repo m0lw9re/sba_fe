@@ -1,0 +1,57 @@
+.report-view-level-one-container {
+    .title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .action-wrapper {
+        .btn-action {
+            height: 36px;
+            border-radius: 4px;
+            background-color: #2862af;
+            color: white;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+.approvel-history-modal {
+    .ant-modal-content {
+      width: 100%;
+      padding: 0px;
+  
+      .space-assignment {
+        width: 100%;
+  
+        .ant-space-item {
+          .ant-form-horizontal {
+            padding: 0 8px;
+          }
+  
+          .ant-collapse-icon-position-end {
+            padding: 0 8px;
+          }
+  
+          .approvel-history-modal-header {
+            border-radius: 8px 8px 0 0;
+            background-image: linear-gradient(
+              to left,
+              rgb(111, 190, 237),
+              rgb(44, 104, 177)
+            );
+            padding: 8px;
+            width: 100%;
+          }
+  
+          .approvel-history-modal-header {
+            .card-title-container .title {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  

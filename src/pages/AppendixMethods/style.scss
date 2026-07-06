@@ -1,0 +1,54 @@
+.title-wrapper-appendixmethods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    width: 100%;
+    padding: 8px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    .title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .action-wrapper {
+        .btn-action {
+            height: 36px;
+            border-radius: 4px;
+            background-color: #2862af;
+            color: white;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        .btn-save {
+            height: 36px;
+            border-radius: 4px;
+            padding-left: 12px;
+            padding-right: 12px;
+            background-color: #2862af;
+            color: white;
+            &:hover {
+                opacity: 0.8;
+            }
+            &:disabled {
+                cursor: not-allowed;
+                border-color: #d9d9d9;
+                color: rgba(0, 0, 0, 0.25);
+                background-color: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.sign-content{
+    .ant-space-item{
+        width: 100%;
+    }
+}

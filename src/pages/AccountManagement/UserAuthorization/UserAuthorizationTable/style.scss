@@ -1,0 +1,27 @@
+.user-authorization-table-container {
+    .user-authorization-table>div>div>div>div>div>div>div>table>.ant-table-tbody>tr>td {
+        padding: 0px !important;
+        align-items: start;
+    }
+
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #2862AF;
+        border-color: #2862AF;
+    }
+
+    .ant-checkbox:hover .ant-checkbox-inner::after {
+        border-color: white;
+    }
+
+    .ant-checkbox-indeterminate .ant-checkbox-inner:after {
+        background-color: #2862AF;
+    }
+
+    .user-authorization-table>div>div>div>div>div>div>div>table>.ant-table-tbody>tr>td:first-child {
+        display: block;
+    }
+
+    .user-authorization-table>div>div>div>div>div>div>div>table>.ant-table-tbody>tr>td:last-child {
+        display: block;
+    }
+}

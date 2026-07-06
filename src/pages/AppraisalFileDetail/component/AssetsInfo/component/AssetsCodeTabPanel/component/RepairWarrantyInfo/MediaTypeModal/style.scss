@@ -1,0 +1,52 @@
+.media-type-modal-container {
+    max-width: 628px !important;
+    width: 100% !important;
+
+    .ant-modal-content {
+        width: 100%;
+        padding: 0px;
+
+        .ant-modal-header {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .ant-space {
+            width: 100%;
+
+            .ant-space-item {
+                width: 100%;
+
+                .modal-media-type-header {
+                    border-radius: 8px 8px 0 0;
+                    color: white;
+                    background-image: linear-gradient(to left,
+                            rgb(111, 190, 237),
+                            rgb(44, 104, 177));
+                    padding: 8px;
+                    width: 100%;
+                }
+
+                .modal-media-type-header {
+                    .card-title-container>.title {
+                        color: white;
+                    }
+                }
+
+                .ant-col {
+                    padding: 2px 0px;
+                }
+
+                .form-kpi-Expert {
+                    padding: 0 8px;
+                }
+            }
+        }
+
+        .card-title-container {
+            .ant-typography {
+                color: white !important;
+            }
+        }
+    }
+}

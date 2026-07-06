@@ -1,0 +1,42 @@
+.chart-wrapper {
+  width: 100%;
+  height: 100%;
+  .ant-space-item {
+    width: 100%;
+    height: 100%;
+    .chart-item {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      canvas {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+}
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

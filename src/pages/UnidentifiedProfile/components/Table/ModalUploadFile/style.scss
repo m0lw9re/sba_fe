@@ -1,0 +1,24 @@
+.custom-modal {
+    .ant-modal-content {
+      width: 80vw;
+      top: 13%;
+      left: 50%;
+      transform: translate(-50%, -13%);
+      .ant-modal-body {
+        .custom-iframe {
+          width: 100%;
+          height: 75vh;
+        }
+      }
+    }
+  }
+  
+  .ant-form-item-control-input {
+    .ant-upload-list-item-name {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 150px;
+    }
+  }
+  

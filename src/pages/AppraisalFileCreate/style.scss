@@ -1,0 +1,49 @@
+.header-wrapper-appraisal-file-create {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  @media (min-width: 768px) {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    padding: 8px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .title-wrapper {
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+    }
+  }
+
+  .actions-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      height: 36px;
+      border-radius: 4px;
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+
+    .btn-save {
+      height: 36px;
+      border-radius: 4px;
+      padding-left: 6px;
+      padding-right: 6px;
+      background-color: #2862af;
+      color: white;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

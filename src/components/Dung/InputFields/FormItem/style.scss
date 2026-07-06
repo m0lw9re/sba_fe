@@ -1,0 +1,120 @@
+// .form-item-input-container {
+//   margin-bottom: 0 !important;
+
+//   .ant-picker,
+//   .ant-select-selector {
+//     width: 100%;
+//     height: 36px !important;
+//     display: flex;
+//     align-items: center;
+//     font-size: 14px !important;
+//     font-weight: 400;
+//     line-height: 22px !important;
+//     border-radius: 4px !important;
+
+//     .ant-picker-input {
+//       input {
+//         font-size: 14px !important;
+//         font-weight: 400;
+//         line-height: 22px !important;
+//         border-radius: 4px;
+//       }
+//     }
+
+//     .ant-select-selection-search {
+//       display: flex;
+//       align-items: center;
+//     }
+//   }
+
+//   .ant-input,
+//   .ant-form-item-required {
+//     height: 36px !important;
+//     font-size: 14px !important;
+//     font-weight: 400;
+//     line-height: 22px !important;
+//     border-radius: 4px;
+//   }
+
+//   .ant-input-number {
+//     width: 100% !important;
+//     border-radius: 4px;
+
+//     .ant-input-number-input {
+//       height: 34px !important;
+//       font-size: 14px !important;
+//       font-weight: 400;
+//       line-height: 22px !important;
+//     }
+//   }
+
+//   .ant-input-number-group-wrapper {
+//     width: 100%;
+
+//     .ant-input-number-group-addon {
+//       border-top-right-radius: 4px !important;
+//       border-bottom-right-radius: 4px !important;
+//     }
+
+//     .ant-input-number-input-wrap {
+//       height: 34px !important;
+//     }
+//   }
+
+//   .ant-form-item-label {
+//     display: flex;
+//     align-items: center;
+//     .ant-typography {
+//       opacity: 0.6;
+//       font-size: 14px;
+//       font-family: 'Roboto', sans-serif !important;
+//     }
+//   }
+
+//   .ant-input-textarea-affix-wrapper {
+//     .ant-input {
+//       height: auto !important;
+//     }
+//   }
+// }
+
+.form-item-input-container {
+  margin-bottom: 0 !important;
+
+  .ant-form-item-label {
+    .ant-form-item-no-colon {
+      opacity: 0.6;
+    }
+    display: flex;
+    align-items: center;
+  }
+
+  .date-picker-custom {
+    border-radius: 4px;
+  }
+
+  .range-picker-custom {
+    border-radius: 4px;
+  }
+
+  .input-number-custom {
+    width: 100%;
+  }
+
+  .input-number-custom-align-right {
+    width: 100%;
+    > .ant-input-number-input-wrap {
+      > input {
+        text-align: right;
+      }
+    }
+  }
+  .input-number-custom-align-center {
+    width: 100%;
+    > .ant-input-number-input-wrap {
+      > input {
+        text-align: center;
+      }
+    }
+  }
+}

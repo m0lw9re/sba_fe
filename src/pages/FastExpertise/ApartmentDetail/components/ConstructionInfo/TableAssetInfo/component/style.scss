@@ -1,0 +1,118 @@
+// background-image: linear-gradient(to left, rgb(111, 190, 237), rgb(44, 104, 177));
+.modalAddCompareAsset {
+  width: 80% !important;
+  .ant-modal-content {
+    width: 100%;
+    padding: 0px;
+
+    > .ant-modal-body {
+      width: 100%;
+    }
+
+    .ant-space {
+      width: 100%;
+      box-sizing: border-box;
+
+      .ant-space-item {
+        width: 100%;
+
+        .modalAdditionRequired-header {
+          border-radius: 8px 8px 0 0;
+          background-image: linear-gradient(
+            to left,
+            rgb(111, 190, 237),
+            rgb(44, 104, 177)
+          );
+          padding: 8px;
+          width: 100%;
+        }
+
+        > .modalAdditionRequired-header {
+          > .card-title-container > .title {
+            color: white !important;
+          }
+        }
+      }
+    }
+    .add-assets-form-container {
+      .ant-form-item-label {
+        padding-bottom: 0 !important;
+      }
+    }
+    .commant-wrapper-content {
+      color: red;
+      width: 100% !important;
+       .commant-header, .commant-footer {
+          margin: 0% !important;
+          margin-top: 4px !important;
+      }
+      .ant-input-affix-wrapper {
+          height: auto;
+          min-height: 80px;
+          .ant-input {
+             min-height: 80px !important;
+          }
+      }
+      .commant-footer {
+          display: block;
+          text-align: right;
+      }
+    }
+  }
+  .form-AdditionRequired {
+    padding: 0 8px;
+    .form-item-custom {
+      margin: 0;
+      .ant-form-item-no-colon {
+        span {
+          color: #919191;
+        }
+      }
+    }
+  }
+}
+
+.tab-assets {
+  margin-bottom: 8px;
+  .ant-tabs-nav-wrap {
+    height: 37px;
+
+    .ant-tabs-nav-list {
+      width: 100%;
+      color: white;
+      justify-content: space-between;
+      column-gap: 4px;
+
+      .ant-tabs-ink-bar {
+        display: none;
+      }
+      // .ant-tabs-ink-bar-animated {
+      // }
+
+      .ant-tabs-tab {
+        margin: 0;
+        flex-grow: 1;
+        flex-basis: 0;
+        //height: 37px;
+        justify-content: center;
+        border: none;
+        &:hover {
+          color: #2862af;
+          background-color: white;
+          border-radius: 4px;
+          .ant-tabs-tab-btn {
+            color: #2862af;
+          }
+        }
+      }
+      .ant-tabs-tab-active {
+        background-color: white;
+        border-radius: 4px;
+
+        .ant-tabs-tab-btn {
+          color: #2862af;
+        }
+      }
+    }
+  }
+}

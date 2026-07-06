@@ -1,0 +1,10 @@
+.dynamic-table-wrapper {
+  .ant-table-pagination {
+    display: none;
+  }
+
+  .ant-table-cell {
+    padding: 2px !important ;
+    width: fit-content !important;
+  }
+}

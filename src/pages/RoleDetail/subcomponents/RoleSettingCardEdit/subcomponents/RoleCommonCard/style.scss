@@ -1,0 +1,9 @@
+.role-management-card > .ant-card-body{
+    padding: 8px;
+}
+.role-management-card{
+    background-color: rgba(250, 250, 250, 1);
+    .ant-card-body > .ant-divider{
+        margin: 0 0 8px 0;
+    }
+} 

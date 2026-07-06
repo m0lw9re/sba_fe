@@ -1,0 +1,27 @@
+.cell-upload {
+    margin: 0 !important;
+    align-items: center;
+    > .ant-form-item-row {
+        > .ant-form-item-control {
+            > .ant-form-item-control-input {
+                > .ant-form-item-control-input-content {
+                    > .cell-upload-item {
+                        .cell-upload-button {
+                            color: #2862AF;
+                        }
+                        .ant-upload-list {
+                            .ant-upload-list-item-container, .ant-upload  {
+                                width: 80px !important;
+                                height: 80px !important;
+                                margin-bottom: 0 !important;
+                            }
+                           
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}

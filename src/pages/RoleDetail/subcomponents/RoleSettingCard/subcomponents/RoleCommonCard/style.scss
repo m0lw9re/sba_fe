@@ -1,0 +1,15 @@
+.role-common-card > .ant-card-body{
+    padding: 8px;
+}
+.role-common-card{
+    background-color: rgba(250, 250, 250, 1);
+    .ant-card-body > .ant-divider{
+        margin: 8px 0 8px 0;
+    }
+    .role-group-wrapper > 
+        .ant-space-item{
+            display: flex;
+            align-items: center;
+        }
+    
+} 
