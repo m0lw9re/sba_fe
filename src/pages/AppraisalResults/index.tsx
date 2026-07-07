@@ -1,5 +1,6 @@
 import {
   Button,
+  Input,
   Modal,
   Row,
   Space,
@@ -72,6 +73,9 @@ const AppraisalResults = () => {
   const [sendingOtpStatus, setSendingOtpStatus] =
     useState<SendingOtpStatus>("pending");
   const [isSigningLoading, setIsSigningLoading] = useState<boolean>(false);
+  const [resultManualEmail, setResultManualEmail] = useState<string>("");
+  const [isSendingResultManual, setIsSendingResultManual] =
+    useState<boolean>(false);
 
   const [uploadModalTBKQ, setUploadModalTBKQ] = useState<boolean>(false);
 
@@ -377,6 +381,18 @@ const AppraisalResults = () => {
       setIsSigningLoading(false);
     }
   };
+  const handleSendEmailResultManual = async () => {
+    if (!id || !resultManualEmail) return;
+    setIsSendingResultManual(true);
+    try {
+      await sendApprovalAPI.sendEmailResultManual(id, resultManualEmail);
+      message.success("Gửi thông báo tư vấn giá thành công");
+    } catch (error: any) {
+      message.error("Gửi thông báo tư vấn giá thất bại, vui lòng thử lại!");
+    } finally {
+      setIsSendingResultManual(false);
+    }
+  };
   const handleOpenAdjustSignerModal = () => {
     setIsModalAdjustSignerOpen(true);
   };
@@ -544,6 +560,25 @@ const AppraisalResults = () => {
                 >
                   Upload TB, KQ
                 </Button> */}
+                {sendingOtpStatus === "success" && (
+                  <>
+                    <Input
+                      className="btn-action"
+                      style={{ width: 220 }}
+                      placeholder="Nhập email nhận thông báo"
+                      value={resultManualEmail}
+                      onChange={(e) => setResultManualEmail(e.target.value)}
+                    />
+                    <Button
+                      className="btn-action"
+                      loading={isSendingResultManual}
+                      disabled={!resultManualEmail}
+                      onClick={handleSendEmailResultManual}
+                    >
+                      Gửi thông báo tư vấn giá
+                    </Button>
+                  </>
+                )}
                 <Button
                   className="btn-action"
                   onClick={() =>

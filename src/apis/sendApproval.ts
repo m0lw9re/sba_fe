@@ -148,6 +148,12 @@ export const sendApprovalAPI = {
       data,
     });
   },
+  sendEmailResultManual: (appraisalFileId: string, email: string) => {
+    return SBAAxiosClient(`/bussiness/api/v1/email/resultManual`, {
+      method: "POST",
+      params: { appraisalFileId, email },
+    });
+  },
   getMeetingReport: (id: string) => {
     let errorCount = 0;
     const delay = (ms: number) =>
