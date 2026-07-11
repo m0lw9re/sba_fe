@@ -149,10 +149,14 @@ export const sendApprovalAPI = {
     });
   },
   sendEmailResultManual: (appraisalFileId: string, email: string) => {
-    return SBAAxiosClient(`/bussiness/api/v1/email/resultManual`, {
-      method: "POST",
-      params: { appraisalFileId, email },
-    });
+    return SBAAxiosClient(
+      `/bussiness/api/v1/email/resultManual?appraisalFileId=${appraisalFileId}&email=${encodeURIComponent(
+        email
+      )}`,
+      {
+        method: "POST",
+      }
+    );
   },
   getMeetingReport: (id: string) => {
     let errorCount = 0;
