@@ -32,7 +32,7 @@ import AdjustSignerModal from "./component/AdjustSignerModal/AdjustSignerModal";
 import "./style.scss";
 import { RootState } from "configs/configureStore";
 import { isNotAllowed } from "utils/permission";
-import { BUTTON_CODES } from "constant/common";
+import { APPRAISAL_FILE_STATUS, BUTTON_CODES } from "constant/common";
 import { sortBy } from "lodash";
 import { UploadOutlined } from "@ant-design/icons";
 export type SendingOtpStatus = "pending" | "sending" | "success" | "rejected";
@@ -73,7 +73,9 @@ const AppraisalResults = () => {
   const [sendingOtpStatus, setSendingOtpStatus] =
     useState<SendingOtpStatus>("pending");
   const [isSigningLoading, setIsSigningLoading] = useState<boolean>(false);
-  const [resultManualEmail, setResultManualEmail] = useState<string>("");
+  const [resultManualEmail, setResultManualEmail] = useState<string>(
+    "tuvangia@scvalue.com.vn",
+  );
   const [isSendingResultManual, setIsSendingResultManual] =
     useState<boolean>(false);
 
@@ -522,7 +524,10 @@ const AppraisalResults = () => {
     // get file
     getFiles();
 
-    if (appraisalDetail?.appraisalInformFileName) {
+    if (
+      appraisalDetail?.fileStatus === APPRAISAL_FILE_STATUS.NINETEEN ||
+      appraisalDetail?.fileStatus === APPRAISAL_FILE_STATUS.TWENTY
+    ) {
       setSendingOtpStatus("success");
     }
   }, [appraisalDetail]);
@@ -568,11 +573,21 @@ const AppraisalResults = () => {
                       placeholder="Nhập email nhận thông báo"
                       value={resultManualEmail}
                       onChange={(e) => setResultManualEmail(e.target.value)}
+                      disabled={isNotAllowed(
+                        currentPagePermissions,
+                        BUTTON_CODES.ks_gui_tu_van_gia,
+                      )}
                     />
                     <Button
                       className="btn-action"
                       loading={isSendingResultManual}
-                      disabled={!resultManualEmail}
+                      disabled={
+                        !resultManualEmail ||
+                        isNotAllowed(
+                          currentPagePermissions,
+                          BUTTON_CODES.ks_gui_tu_van_gia,
+                        )
+                      }
                       onClick={handleSendEmailResultManual}
                     >
                       Gửi thông báo tư vấn giá
