@@ -14,13 +14,17 @@ import { sendApprovalAPI } from "apis/sendApproval";
 import InputFields from "components/InputFields";
 import PdfViewer from "components/PdfViewer";
 import TitleCustom from "components/TitleCustom";
+import { RootState } from "configs/configureStore";
+import { APPRAISAL_FILE_STATUS, BUTTON_CODES } from "constant/common";
 import { ASSET_LV2, LOCAL_STORAGE_KEY, TYPE_FIELD } from "constant/enums";
 import { AssetValuationType } from "constant/types/appraisalFile";
+import { sortBy } from "lodash";
 import { setSelectedBeadCrumb } from "pages/App/store/appSlice";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { APPRAISAL_FILE_DETAIL } from "routes/route.constant";
+import { isNotAllowed } from "utils/permission";
 import {
   useAppraisalFileDetail,
   useAssetsValuation,
@@ -30,11 +34,6 @@ import { useApproval } from "utils/request/useApproval";
 import AdjustFileModal from "./component/AdjustFileModal/AdjustFileModal";
 import AdjustSignerModal from "./component/AdjustSignerModal/AdjustSignerModal";
 import "./style.scss";
-import { RootState } from "configs/configureStore";
-import { isNotAllowed } from "utils/permission";
-import { APPRAISAL_FILE_STATUS, BUTTON_CODES } from "constant/common";
-import { sortBy } from "lodash";
-import { UploadOutlined } from "@ant-design/icons";
 export type SendingOtpStatus = "pending" | "sending" | "success" | "rejected";
 
 const { LAND, APARTMENT, PROJECT, ESTIMATE, VEHICLE, WATER_VEHICLE, MACHINE } =
@@ -42,7 +41,8 @@ const { LAND, APARTMENT, PROJECT, ESTIMATE, VEHICLE, WATER_VEHICLE, MACHINE } =
 const AppraisalResults = () => {
   const { id } = useParams<{ id: string }>();
   const { data: approvalInfo, mutate } = useApproval(id || null);
-  const { data: appraisalDetail } = useAppraisalFileDetail(id!);
+  const { data: appraisalDetail, mutate: mutateAppraisalDetail } =
+    useAppraisalFileDetail(id!);
   const {
     data: valuationData,
   }: {
@@ -389,6 +389,7 @@ const AppraisalResults = () => {
     try {
       await sendApprovalAPI.sendEmailResultManual(id, resultManualEmail);
       message.success("Gửi thông báo tư vấn giá thành công");
+      mutateAppraisalDetail();
     } catch (error: any) {
       message.error("Gửi thông báo tư vấn giá thất bại, vui lòng thử lại!");
     } finally {
@@ -573,16 +574,20 @@ const AppraisalResults = () => {
                       placeholder="Nhập email nhận thông báo"
                       value={resultManualEmail}
                       onChange={(e) => setResultManualEmail(e.target.value)}
-                      disabled={isNotAllowed(
-                        currentPagePermissions,
-                        BUTTON_CODES.ks_gui_tu_van_gia,
-                      )}
+                      disabled={
+                        appraisalDetail?.sendToEmail === 1 ||
+                        isNotAllowed(
+                          currentPagePermissions,
+                          BUTTON_CODES.ks_gui_tu_van_gia,
+                        )
+                      }
                     />
                     <Button
                       className="btn-action"
                       loading={isSendingResultManual}
                       disabled={
                         !resultManualEmail ||
+                        appraisalDetail?.sendToEmail === 1 ||
                         isNotAllowed(
                           currentPagePermissions,
                           BUTTON_CODES.ks_gui_tu_van_gia,
