@@ -208,6 +208,11 @@ type AppraisalFileType = {
   isSendToLos?: boolean | null; //đã gửi cho los LOS - Không được sử dụng nữa - thay thế bằng sendToEmail
   receivedLos?: boolean | null; //1 đã tiếp nhận từ LOS
   sendToEmail?: number | null; // sử dụng thay thế cho isSendToLos
+  // emailStatus dạng chuỗi ký tự "0"/"1" theo từng vị trí:
+  // 0: Từ chối hồ sơ | 1: Yêu cầu bổ sung hồ sơ | 2: Yêu cầu xuất hoá đơn
+  // 3: Gửi thông báo phí (trước ký số) | 4: Gửi thông báo phí (sau ký số)
+  // 5: Gửi thông báo kết quả thẩm định | 7: Đã xuất hoá đơn | 8: Gửi báo giá
+  emailStatus?: string | null;
 
   // thông tin khách hàng đối với hồ sơ từ LOS
   customerNameByLos: string | null;
