@@ -287,6 +287,12 @@ const AppraisalResults = () => {
     }
     return false;
   };
+  const handleCheckIsSentPriceConsult = () => {
+    const emailStatus = appraisalDetail?.emailStatus;
+    // Dữ liệu cũ chỉ có 7 vị trí (0-6), chưa có vị trí 8 (Gửi báo giá) => coi như chưa gửi
+    if (!emailStatus || emailStatus.length <= 8) return false;
+    return emailStatus.charAt(8) === "1";
+  };
   const handleGetFile = async (id: string, type: "inform" | "result") => {
     if (!appraisalDetail) return "";
     try {
@@ -575,7 +581,7 @@ const AppraisalResults = () => {
                       value={resultManualEmail}
                       onChange={(e) => setResultManualEmail(e.target.value)}
                       disabled={
-                        appraisalDetail?.sendToEmail === 1 ||
+                        handleCheckIsSentPriceConsult() ||
                         isNotAllowed(
                           currentPagePermissions,
                           BUTTON_CODES.ks_gui_tu_van_gia,
@@ -587,7 +593,7 @@ const AppraisalResults = () => {
                       loading={isSendingResultManual}
                       disabled={
                         !resultManualEmail ||
-                        appraisalDetail?.sendToEmail === 1 ||
+                        handleCheckIsSentPriceConsult() ||
                         isNotAllowed(
                           currentPagePermissions,
                           BUTTON_CODES.ks_gui_tu_van_gia,
