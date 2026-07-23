@@ -397,7 +397,10 @@ const AppraisalResults = () => {
       message.success("Gửi thông báo tư vấn giá thành công");
       mutateAppraisalDetail();
     } catch (error: any) {
-      message.error("Gửi thông báo tư vấn giá thất bại, vui lòng thử lại!");
+      message.error(
+        error?.response?.data?.message ||
+          "Gửi thông báo tư vấn giá thất bại, vui lòng thử lại!",
+      );
     } finally {
       setIsSendingResultManual(false);
     }
