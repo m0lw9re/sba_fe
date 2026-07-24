@@ -53,6 +53,9 @@ const AppraisalResults = () => {
   );
   const totalAssetValue = valuationData?.tableTong?.totalValueApprovaled || 0;
   const companyBranchId = appraisalDetail?.appraisalUnit || 0;
+  // emailStatus vị trí cuối (index 7) = "1" => đã gửi báo giá
+  const isSentResultManualEmail =
+    appraisalDetail?.emailStatus?.charAt(7) === "1";
 
   const userId = String(localStorage.getItem(LOCAL_STORAGE_KEY.USER_ID));
   const dispatch = useDispatch();
@@ -566,39 +569,36 @@ const AppraisalResults = () => {
                 >
                   Upload TB, KQ
                 </Button> */}
-                {sendingOtpStatus === "success" && (
-                  <>
-                    <Input
-                      className="btn-action"
-                      style={{ width: 220 }}
-                      placeholder="Nhập email nhận thông báo"
-                      value={resultManualEmail}
-                      onChange={(e) => setResultManualEmail(e.target.value)}
-                      disabled={
-                        appraisalDetail?.sendToEmail === 1 ||
-                        isNotAllowed(
+                {sendingOtpStatus === "success" &&
+                  !isSentResultManualEmail && (
+                    <>
+                      <Input
+                        className="btn-action"
+                        style={{ width: 220 }}
+                        placeholder="Nhập email nhận thông báo"
+                        value={resultManualEmail}
+                        onChange={(e) => setResultManualEmail(e.target.value)}
+                        disabled={isNotAllowed(
                           currentPagePermissions,
                           BUTTON_CODES.ks_gui_tu_van_gia,
-                        )
-                      }
-                    />
-                    <Button
-                      className="btn-action"
-                      loading={isSendingResultManual}
-                      disabled={
-                        !resultManualEmail ||
-                        appraisalDetail?.sendToEmail === 1 ||
-                        isNotAllowed(
-                          currentPagePermissions,
-                          BUTTON_CODES.ks_gui_tu_van_gia,
-                        )
-                      }
-                      onClick={handleSendEmailResultManual}
-                    >
-                      Gửi thông báo tư vấn giá
-                    </Button>
-                  </>
-                )}
+                        )}
+                      />
+                      <Button
+                        className="btn-action"
+                        loading={isSendingResultManual}
+                        disabled={
+                          !resultManualEmail ||
+                          isNotAllowed(
+                            currentPagePermissions,
+                            BUTTON_CODES.ks_gui_tu_van_gia,
+                          )
+                        }
+                        onClick={handleSendEmailResultManual}
+                      >
+                        Gửi thông báo tư vấn giá
+                      </Button>
+                    </>
+                  )}
                 <Button
                   className="btn-action"
                   onClick={() =>
