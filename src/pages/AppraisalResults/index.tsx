@@ -290,6 +290,12 @@ const AppraisalResults = () => {
     }
     return false;
   };
+  const handleCheckIsSentPriceConsult = () => {
+    const emailStatus = appraisalDetail?.emailStatus;
+    // Dữ liệu cũ chỉ có 7 vị trí (0-6), chưa có vị trí 8 (Gửi báo giá) => coi như chưa gửi
+    if (!emailStatus || emailStatus.length < 8) return false;
+    return emailStatus.charAt(7) === "1";
+  };
   const handleGetFile = async (id: string, type: "inform" | "result") => {
     if (!appraisalDetail) return "";
     try {
@@ -394,7 +400,10 @@ const AppraisalResults = () => {
       message.success("Gửi thông báo tư vấn giá thành công");
       mutateAppraisalDetail();
     } catch (error: any) {
-      message.error("Gửi thông báo tư vấn giá thất bại, vui lòng thử lại!");
+      message.error(
+        error?.response?.data?.message ||
+          "Gửi thông báo tư vấn giá thất bại, vui lòng thử lại!",
+      );
     } finally {
       setIsSendingResultManual(false);
     }
@@ -569,36 +578,39 @@ const AppraisalResults = () => {
                 >
                   Upload TB, KQ
                 </Button> */}
-                {sendingOtpStatus === "success" &&
-                  !isSentResultManualEmail && (
-                    <>
-                      <Input
-                        className="btn-action"
-                        style={{ width: 220 }}
-                        placeholder="Nhập email nhận thông báo"
-                        value={resultManualEmail}
-                        onChange={(e) => setResultManualEmail(e.target.value)}
-                        disabled={isNotAllowed(
+                {sendingOtpStatus === "success" && (
+                  <>
+                    <Input
+                      className="btn-action"
+                      style={{ width: 220 }}
+                      placeholder="Nhập email nhận thông báo"
+                      value={resultManualEmail}
+                      onChange={(e) => setResultManualEmail(e.target.value)}
+                      disabled={
+                        handleCheckIsSentPriceConsult() ||
+                        isNotAllowed(
                           currentPagePermissions,
                           BUTTON_CODES.ks_gui_tu_van_gia,
-                        )}
-                      />
-                      <Button
-                        className="btn-action"
-                        loading={isSendingResultManual}
-                        disabled={
-                          !resultManualEmail ||
-                          isNotAllowed(
-                            currentPagePermissions,
-                            BUTTON_CODES.ks_gui_tu_van_gia,
-                          )
-                        }
-                        onClick={handleSendEmailResultManual}
-                      >
-                        Gửi thông báo tư vấn giá
-                      </Button>
-                    </>
-                  )}
+                        )
+                      }
+                    />
+                    <Button
+                      className="btn-action"
+                      loading={isSendingResultManual}
+                      disabled={
+                        !resultManualEmail ||
+                        handleCheckIsSentPriceConsult() ||
+                        isNotAllowed(
+                          currentPagePermissions,
+                          BUTTON_CODES.ks_gui_tu_van_gia,
+                        )
+                      }
+                      onClick={handleSendEmailResultManual}
+                    >
+                      Gửi thông báo tư vấn giá
+                    </Button>
+                  </>
+                )}
                 <Button
                   className="btn-action"
                   onClick={() =>
